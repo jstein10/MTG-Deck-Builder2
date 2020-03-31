@@ -1,0 +1,21 @@
+base outline for Magic the Gathering Deckbuilder
+
+-Login and reg
+
+-searchbar function (make api request for matching cards)
+
+UserSchema{
+    userID: match the Auth0 id/request that we get back 
+    decks: {}
+        decks should be a dictionary so user can name the key(which is equal to the name of the deck)
+
+        {fire: deck._id , water:, earthdeck:}
+        Deck.find({_id: request.body.value})
+}
+
+
+DeckSchema(
+    validation for card count/
+    validation for card number/id
+
+)

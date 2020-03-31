@@ -1,0 +1,54 @@
+Current proposed setup is to have three separate schemas, one for users, one for decks, and one for cards.
+This could be done in one schema if that would be easier for everyone, but functionality might change as a result 
+(or more likely, how we execute getting said functionality.)
+
+-----------------------------------------------------------------------------------------------------------------------
+
+UserSchema:
+	email: String,
+	decks: Map,	//the decks that the user built
+	liked_decks: Map or Array	//if we get to this feature, this will be an array or map of liked decks.
+
+DeckSchema:
+	owner: UserSchema._id,	//Generated upon creation of a user. Could also use the e-mail since those will be 
+				//unique ideally.
+	name: String,	//the name of the deck, stored as a string
+	cardlist: Map,	//a map of cards (map = key-value pair like a dictionary), in which each index in 
+			//the map uses the card's scryfall ID as a key, and has a sub-map of card data and
+			//count of cards in the deck (preventing duplicate entries of the same data)
+		/*
+		Example of Cardlist: {
+			id123 : {
+			    card_name: "Ayula, Queen Among Bears",
+			    card_data: {CardSchema object},
+			    card_count: 1
+			},
+			id456 : {
+			    card_name: "Grizzly Bears",
+			    card_data: {CardSchema object},
+			    card_count: 10
+			},
+			id789 : {
+			    card_name: "Forest",
+			    card_data: {CardSchema object},
+			    card_count: 19
+			}
+		}
+
+		Alternatively, if we don't want to have a card schema object in the cardlist, we could dump all
+		the card info into the above map.
+		*/
+
+CardSchema:
+	scryfall_id: {type: String},
+	name: {type: String},
+	type_line: {type: String},
+	img: {type: String},
+	mana_cost: {type: String},
+	cmc: {type: mongoose.Schema.Types.Decimal128},
+	power: {type: String},
+	toughness: {type: String},
+	colors: {type: Array},
+	color_identity: {type: String},
+	rarity: {type: String},
+	price: {type: mongoose.Schema.Types.Decimal128}

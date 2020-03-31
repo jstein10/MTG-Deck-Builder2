@@ -1,0 +1,195 @@
+what does a user need to be able to do?
+
+create and save decks
+[decks need to be associated to a user]
+[we need a user DB or a way to store user data]
+
+edit saved decks
+[decks need to be accessed (displayed, edited if matching user) at any point in time]
+[p2 decks should store number of likes (could be stored as a number or could be stored as a userID in an array (liked by "x"!), which could be used to prevent duplicate likes.
+
+users need decks
+decks need cards
+
+cards have stats
+
+Users:
+Need to store email(unique), password, user's name (changeable), decks(array?),
+liked decks (reference?)
+
+
+--------------------------------------------------------
+
+{
+    "decks": [
+        {
+            "_id": "5e7c239aeef12537345be1e2",
+            "owner": "Test",
+            "name": "TestDeck",
+            "createdAt": "2020-03-26T03:38:02.747Z",
+            "updatedAt": "2020-03-26T03:38:02.747Z",
+            "__v": 0
+        },
+        {
+            "_id": "5e7c26ebcd11c43ba4eb7084",
+            "owner": "Test",
+            "name": "TestDeck",
+            "createdAt": "2020-03-26T03:52:11.339Z",
+            "updatedAt": "2020-03-26T03:52:11.339Z",
+            "__v": 0
+        },
+        {
+            "_id": "5e7c299aed782335044f56ea",
+            "owner": "Test",
+            "name": "TestDeck",
+            "createdAt": "2020-03-26T04:03:38.270Z",
+            "updatedAt": "2020-03-26T04:03:38.270Z",
+            "__v": 0
+        },
+        {
+            "_id": "5e7c2a74ed782335044f56eb",
+            "owner": "Test",
+            "name": "TestDeck",
+            "createdAt": "2020-03-26T04:07:16.500Z",
+            "updatedAt": "2020-03-26T04:07:16.500Z",
+            "__v": 0
+        },
+        {
+            "_id": "5e7c2acfed782335044f56ec",
+            "owner": "Test",
+            "name": "TestDeck",
+            "createdAt": "2020-03-26T04:08:47.157Z",
+            "updatedAt": "2020-03-26T04:08:47.157Z",
+            "__v": 0
+        },
+        {
+            "_id": "5e7c2f71eb19d11c649c6c1a",
+            "owner": "Test",
+            "name": "TestDeck",
+            "createdAt": "2020-03-26T04:28:33.769Z",
+            "updatedAt": "2020-03-26T04:28:33.769Z",
+            "__v": 0
+        },
+        {
+            "_id": "5e7c30afdeb3443948f4dbdb",
+            "owner": "Test",
+            "name": "TestDeck",
+            "createdAt": "2020-03-26T04:33:51.577Z",
+            "updatedAt": "2020-03-26T04:33:51.577Z",
+            "__v": 0
+        },
+        {
+            "_id": "5e7c30e9deb3443948f4dbdc",
+            "owner": "Test",
+            "name": "TestDeck",
+            "createdAt": "2020-03-26T04:34:49.772Z",
+            "updatedAt": "2020-03-26T04:34:49.772Z",
+            "__v": 0
+        },
+        {
+            "_id": "5e7c3189deb3443948f4dbde",
+            "owner": "Test",
+            "name": "FixedTestDeck",
+            "createdAt": "2020-03-26T04:37:29.626Z",
+            "updatedAt": "2020-03-26T04:37:29.626Z",
+            "__v": 0
+        },
+        {
+            "_id": "5e7c3283deb3443948f4dbdf",
+            "owner": "Test",
+            "name": "TestPullMePls",
+            "createdAt": "2020-03-26T04:41:39.073Z",
+            "updatedAt": "2020-03-26T04:41:39.073Z",
+            "__v": 0
+        },
+        {
+            "_id": "5e7c3313deb3443948f4dbe0",
+            "owner": "Test",
+            "name": "TestPullMePls_Entry",
+            "createdAt": "2020-03-26T04:44:03.174Z",
+            "updatedAt": "2020-03-26T04:44:03.174Z",
+            "__v": 0
+        },
+        {
+            "_id": "5e7c45d45939a93ebc74a2d9",
+            "owner": "Test",
+            "name": "ObjectTest",
+            "cardlist": {
+                "e5f9fa2d-4bf4-4fcb-9b76-fd4a9ff5a58c": {
+                    "name": "Aegis Automaton",
+                    "cmc": 2,
+                    "count": 1
+                },
+                "2cb8eb0c-d7fa-4229-ae65-1890c77b2c7c": {
+                    "name": "Implement of Improvement",
+                    "cmc": 1,
+                    "count": 1
+                },
+                "1599b545-6b8e-4350-980a-59349374400d": {
+                    "name": "Peacewalker Colossus",
+                    "cmc": 3,
+                    "count": 1
+                }
+            },
+            "createdAt": "2020-03-26T06:04:04.210Z",
+            "updatedAt": "2020-03-26T06:04:04.210Z",
+            "__v": 0
+        },
+        {
+            "_id": "5e7c4ba3df377a10843fc285",
+            "owner": "auth0|5e7ab20acee9ae0c7b455f69",
+            "name": "TestDeck",
+            "cardlist": {
+                "e5f9fa2d-4bf4-4fcb-9b76-fd4a9ff5a58c": {
+                    "name": "Aegis Automaton",
+                    "type_line": "Artifact Creature — Construct",
+                    "img": "https://img.scryfall.com/cards/small/front/e/5/e5f9fa2d-4bf4-4fcb-9b76-fd4a9ff5a58c.jpg?1576382187",
+                    "mana_cost": "{2}",
+                    "cmc": 2,
+                    "power": "0",
+                    "toughness": "3",
+                    "colors": [],
+                    "color_identity": [
+                        "W"
+                    ],
+                    "rarity": "common",
+                    "price": "0.06",
+                    "count_in_deck": 1
+                },
+                "a791aa71-00db-422d-a78a-53b121c24db5": {
+                    "name": "Implement of Examination",
+                    "type_line": "Artifact",
+                    "img": "https://img.scryfall.com/cards/small/front/a/7/a791aa71-00db-422d-a78a-53b121c24db5.jpg?1576382282",
+                    "mana_cost": "{3}",
+                    "cmc": 3,
+                    "colors": [],
+                    "color_identity": [
+                        "U"
+                    ],
+                    "rarity": "common",
+                    "price": "0.05",
+                    "count_in_deck": 1
+                },
+                "955b4bc9-1ded-4f23-b415-ab968c681eb7": {
+                    "name": "Merchant's Dockhand",
+                    "type_line": "Artifact Creature — Construct",
+                    "img": "https://img.scryfall.com/cards/small/front/9/5/955b4bc9-1ded-4f23-b415-ab968c681eb7.jpg?1576382333",
+                    "mana_cost": "{1}",
+                    "cmc": 1,
+                    "power": "1",
+                    "toughness": "2",
+                    "colors": [],
+                    "color_identity": [
+                        "U"
+                    ],
+                    "rarity": "rare",
+                    "price": "0.14",
+                    "count_in_deck": 1
+                }
+            },
+            "createdAt": "2020-03-26T06:28:51.130Z",
+            "updatedAt": "2020-03-26T06:28:51.130Z",
+            "__v": 0
+        }
+    ]
+}

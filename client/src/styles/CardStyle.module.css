@@ -1,0 +1,44 @@
+.cardListItem {
+    display: inline-block;
+    vertical-align: top;
+    width: 150px;
+    margin: 5px;
+}
+
+.cardList {
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    margin-top: 10px;
+    overflow-y: scroll;
+}
+
+.cardFilterContainer {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+}
+.cardFilter {
+    display: inline-block;
+    vertical-align: top;
+    width: 400px;
+    text-align: left;
+}
+
+.cardFilterLabel {
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+}
+
+.colorImage {
+    width: 15px;
+    height: 15px;
+}
+
+.cardText {
+    height: 50px;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

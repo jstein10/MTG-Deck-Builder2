@@ -1,0 +1,67 @@
+.deckListContainer {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    height: 120px;
+    text-align: left;
+    margin-top: 10px;
+    border-left: solid black 1px;
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+}
+
+.deckT1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.deckT2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+}
+.deckT2b {
+    font-size: 16px;
+    margin: 5px;
+}
+.deckT3 {
+    font-size: 14px;
+    color: dodgerblue;
+    margin: 10px;
+}
+
+.deckT3:hover {
+    font-size: 14px;
+    text-decoration: underline;
+    color: dodgerblue;
+    margin: 10px;
+}
+
+.deckList {
+    height: 69px;
+    overflow-y: scroll;
+    border-top: solid grey 1px;
+}
+
+
+.deckDetails {
+    display: inline-block;
+    vertical-align: top;
+    width: 570px;
+    height: 90px;
+    text-align: center;
+    margin-top: 10px;
+    padding: 15px;
+    border: solid black 1px;
+}
+
+.deckContents {
+    display: inline-block;
+    vertical-align: top;
+    overflow-y: scroll;
+    width: 900px;
+    height: 400px;
+    border: solid black 1px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
